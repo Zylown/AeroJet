@@ -206,7 +206,7 @@
      margin-left: 20px;
  }
 
- .footer-der {
+ .footer-der-ico {
      margin-right: 20px;
  }
 
@@ -269,8 +269,8 @@
      }
 
      .footer-izq,
-     .footer-der {
-         display: none;
+     .footer-der-ico {
+         width: 100%;
      }
  }
 
@@ -284,12 +284,11 @@
 
      nav a {
          font-size: 14px;
-         padding: 5px;
+         padding: 1px;
      }
 
      .login {
          font-size: 14px;
-         padding: 5px;
      }
 
      .search h1 {
