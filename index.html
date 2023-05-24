@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/airplane-black-glyph-icon-flight-2239097-transformed.ico" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>AeroJet</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav data-animation="bonus">
+            <a href="#">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <a href="#" class="login" data-animation="bonus">Iniciar sesión / Registrarse</a>
+    </header>
+    <main>
+        <div class="search">
+            <h1>Busca tu vuelo</h1>
+            <form class="formulario">
+                <input type="search" placeholder="Origen" required autofocus>
+                <input type="search" placeholder="Destino" required>
+                <input type="date" placeholder="Fecha de ida" required>
+                <input type="date" placeholder="Fecha de vuelta" required>
+                <input type="number" placeholder="Pasajeros" min="1" max="5">
+                <select required>
+                    <option value="default"></option>
+                    <option value="Clase Económica">Clase Económica</option>
+                    <option value="Clase Ejecutiva">Clase Ejecutiva</option>
+                    <option value="Primera Clase">Primera Clase</option>
+                </select>
+                <button type="submit">Buscar </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-izq">
+            <p>Teléfono: +51 987654321</p>
+            <p>Email: info@aerojet.com</p>
+        </div>
+        <div class="footer-der">
+            <a href="#"><box-icon type='logo' name='facebook'></box-icon></a>
+            <a href="#"><box-icon name='twitter' type='logo'></box-icon></a>
+            <a href="#"><box-icon name='instagram' type='logo'></box-icon></a>
+            <a href="#">Políticas de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div><!-- 
+        <div class="footer-izq">
+            <p>©AeroJet</p>
+        </div>
+        <div class="footer-der">
+            <img src="img/logo.png" alt="Logo" class="logoFooter">
+        </div>-->
+    </footer>
+</body>
+
+</html>
