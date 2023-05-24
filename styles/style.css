@@ -91,7 +91,7 @@
      justify-content: left;
      padding-left: 3%;
      height: calc(100vh - 160px);
-     background: url(../img/31181.png) no-repeat;
+     background: url(../img/31181.png) fixed;
      background-position: center;
      background-position-y: 32%;
      background-position-x: 10%;
