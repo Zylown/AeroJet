@@ -220,3 +220,79 @@
  .footer a:hover {
      color: #666666;
  }
+
+ @media only screen and (max-width: 768px) {
+     header {
+         height: 60px;
+     }
+
+     .logo {
+         width: 200px;
+         height: 150px;
+     }
+
+     nav {
+         margin-right: 10px;
+     }
+
+     nav a {
+         font-size: 16px;
+     }
+
+     .login {
+         font-size: 16px;
+         padding: 8px;
+     }
+
+     .search {
+         width: 100%;
+         height: auto;
+         padding: 20px;
+     }
+
+     .search h1 {
+         font-size: 24px;
+     }
+
+     .search input,
+     .search select {
+         width: 100%;
+         margin: 10px 0;
+     }
+
+     .search button {
+         margin-left: 0;
+     }
+
+     footer {
+         height: 60px;
+     }
+
+     .footer-izq,
+     .footer-der {
+         display: none;
+     }
+ }
+
+ /* Estilos para pantallas aún más pequeñas */
+
+ @media only screen and (max-width: 480px) {
+     .logo {
+         width: 150px;
+         height: 100px;
+     }
+
+     nav a {
+         font-size: 14px;
+         padding: 5px;
+     }
+
+     .login {
+         font-size: 14px;
+         padding: 5px;
+     }
+
+     .search h1 {
+         font-size: 20px;
+     }
+ }
