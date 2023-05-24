@@ -284,14 +284,26 @@
 
      nav a {
          font-size: 14px;
-         padding: 1px;
+         padding: 3px;
      }
 
      .login {
          font-size: 14px;
      }
 
+     .search {
+         width: 75%;
+     }
+
      .search h1 {
          font-size: 20px;
+     }
+
+     .footer-izq {
+         width: 140%;
+     }
+
+     .footer-der-ico {
+         padding-left: 5%;
      }
  }
