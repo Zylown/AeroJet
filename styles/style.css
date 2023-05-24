@@ -103,7 +103,7 @@
      display: flex;
      align-items: center;
      justify-content: left;
-     padding-left: 5%;
+     padding-left: 3%;
      height: calc(100vh - 160px);
      background-image: url(../img/31181.png);
      background-position: center;
@@ -245,9 +245,11 @@
      }
 
      .search {
-         width: 100%;
+         justify-content: center;
+         width: auto;
          height: auto;
-         padding: 20px;
+         padding: 5%;
+         margin-right: 4%;
      }
 
      .search h1 {
@@ -264,13 +266,12 @@
          margin-left: 0;
      }
 
-     footer {
-         height: 60px;
+     .footer-izq {
+         width: 140%;
      }
 
-     .footer-izq,
      .footer-der-ico {
-         width: 100%;
+         padding-left: 0%;
      }
  }
 
@@ -292,7 +293,11 @@
      }
 
      .search {
-         width: 75%;
+         justify-content: center;
+         width: auto;
+         height: auto;
+         padding: 5%;
+         margin-right: 4%;
      }
 
      .search h1 {
@@ -300,10 +305,11 @@
      }
 
      .footer-izq {
-         width: 140%;
+         width: 120%;
      }
 
      .footer-der-ico {
-         padding-left: 5%;
+         display: flex;
+         flex-direction: row;
      }
  }
