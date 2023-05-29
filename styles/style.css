@@ -346,7 +346,16 @@
 
  @media only screen and (max-width: 768px) {
      header {
-         height: 60px;
+         width: auto;
+         justify-content: start;
+         flex-direction: column;
+         align-items: flex-start;
+         height: 73vh;
+     }
+
+     #menu {
+         width: auto;
+         flex-direction: column;
      }
 
      .logo {
@@ -364,7 +373,13 @@
 
      .login {
          font-size: 16px;
-         padding: 8px;
+         padding: 3px;
+     }
+
+     main {
+         width: auto;
+         background: url(../img/31181.png) scroll;
+         background-position: center;
      }
 
      .search {
@@ -395,15 +410,15 @@
      }
 
      .promociones h1 {
-         display: block;
          width: 100%;
+         display: block;
          text-align: center;
          align-items: center;
-         width: 100%;
      }
 
      .promociones>*:not(h1) {
-         margin-left: 25%;
+         width: auto;
+         margin-left: 16%;
      }
 
 
@@ -413,7 +428,7 @@
      }
 
      .footer-izq {
-         width: 140%;
+         width: auto;
      }
 
      .footer-der-ico {
@@ -424,6 +439,20 @@
  /* Estilos para pantallas aún más pequeñas */
 
  @media only screen and (max-width: 480px) {
+
+     header {
+         width: auto;
+         justify-content: start;
+         flex-direction: column;
+         align-items: flex-start;
+         height: 55vh;
+     }
+
+     #menu {
+         width: auto;
+         flex-direction: column;
+     }
+
      .logo {
          width: 150px;
          height: 100px;
@@ -432,6 +461,16 @@
      nav a {
          font-size: 14px;
          padding: 3px;
+     }
+
+     nav a::after {
+         bottom: 0px;
+     }
+
+     main {
+         width: auto;
+         background: url(../img/31181.png) scroll;
+         background-position: center;
      }
 
      .login {
@@ -460,13 +499,12 @@
          width: 100%;
          text-align: center;
          align-items: center;
-         width: 100%;
      }
 
      .promociones>*:not(h1) {
+         width: auto;
          margin-left: 16%;
      }
-
 
      .metodo-pago {
          height: 330px;
@@ -474,7 +512,7 @@
      }
 
      .footer-izq {
-         width: 120%;
+         width: auto;
      }
 
      .footer-der-ico {
