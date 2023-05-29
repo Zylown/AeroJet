@@ -274,8 +274,6 @@
      justify-content: center;
  }
 
-
-
  .transferencia {
      display: flex;
      flex-direction: column;
@@ -391,6 +389,29 @@
          margin-left: 0;
      }
 
+     .promociones {
+         display: block;
+         height: 1650px;
+     }
+
+     .promociones h1 {
+         display: block;
+         width: 100%;
+         text-align: center;
+         align-items: center;
+         width: 100%;
+     }
+
+     .promociones>*:not(h1) {
+         margin-left: 25%;
+     }
+
+
+     .metodo-pago {
+         height: 330px;
+         flex-direction: column;
+     }
+
      .footer-izq {
          width: 140%;
      }
@@ -427,6 +448,29 @@
 
      .search h1 {
          font-size: 20px;
+     }
+
+     .promociones {
+         display: block;
+         height: 1650px;
+     }
+
+     .promociones h1 {
+         display: block;
+         width: 100%;
+         text-align: center;
+         align-items: center;
+         width: 100%;
+     }
+
+     .promociones>*:not(h1) {
+         margin-left: 16%;
+     }
+
+
+     .metodo-pago {
+         height: 330px;
+         flex-direction: column;
      }
 
      .footer-izq {
