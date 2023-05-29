@@ -18,7 +18,7 @@
             <a href="#">Inicio</a>
             <a href="#">Destinos</a>
             <a href="#">Ofertas</a>
-            <a href="#">Servicios</a>
+            <a href="#">Check-in</a>
             <a href="#">Contacto</a>
         </nav>
         <a href="loginregister.html" class="login">Iniciar sesión / Registrarse</a>
@@ -30,13 +30,75 @@
         <div class="search">
             <h1>Busca tu vuelo</h1>
             <form class="formulario">
-                <input type="search" placeholder="Origen" required autofocus>
-                <input type="search" placeholder="Destino" required>
+                <select required>
+                    <option value="" disabled selected hidden>Selecciona una opción</option>
+                    <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
+                    <option value="CUZ">Cusco - Aeropuerto Internacional Alejandro Velasco Astete (CUZ)</option>
+                    <option value="AQP">Arequipa - Aeropuerto Internacional Rodríguez Ballón (AQP)</option>
+                    <option value="PIU">Piura - Aeropuerto Internacional Capitán FAP Guillermo Concha Iberico (PIU)
+                    </option>
+                    <option value="CIX">Chiclayo - Aeropuerto Internacional Capitán FAP José A. Quiñones González (CIX)
+                    </option>
+                    <option value="TRU">Trujillo - Aeropuerto Internacional Capitán FAP Carlos Martínez de Pinillos
+                        (TRU)</option>
+                    <option value="IQT">Iquitos - Aeropuerto Internacional Coronel FAP Francisco Secada Vignetta (IQT)
+                    </option>
+                    <option value="JUL">Juliaca - Aeropuerto Internacional Inca Manco Cápac (JUL)</option>
+                    <option value="TPP">Tarapoto - Aeropuerto Internacional Cadete FAP Guillermo del Castillo Paredes
+                        (TPP)</option>
+                    <option value="TCQ">Tacna - Aeropuerto Internacional Coronel FAP Carlos Ciriani Santa Rosa (TCQ)
+                    </option>
+                    <option value="PCL">Pucallpa - Aeropuerto Internacional Capitán David Abensur Rengifo (PCL)</option>
+                    <option value="PEM">Puerto Maldonado - Aeropuerto Internacional Padre Aldamiz (PEM)</option>
+                    <option value="AYP">Ayacucho - Aeropuerto Internacional Coronel FAP Alfredo Mendívil Duarte (AYP)
+                    </option>
+                    <option value="TBP">Tumbes - Aeropuerto Internacional Capitán FAP Pedro Canga Rodríguez (TBP)
+                    </option>
+                    <option value="TYL">Talara - Aeropuerto Internacional Capitán FAP Víctor Montes Arias (TYL)</option>
+                    <option value="ILQ">Ilo - Aeropuerto Internacional Coronel FAP Carlos Ciriani Santa Rosa (ILQ)
+                    </option>
+                    <option value="CJA">Cajamarca - Aeropuerto Internacional Mayor General FAP Armando Revoredo Iglesias
+                        (CJA)</option>
+                    <option value="HUU">Huánuco - Aeropuerto Internacional Alférez FAP David Figueroa Fernandini (HUU)
+                    </option>
+                </select>
+                <select required>
+                    <option value="" disabled selected hidden>Selecciona una opción</option>
+                    <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
+                    <option value="CUZ">Cusco - Aeropuerto Internacional Alejandro Velasco Astete (CUZ)</option>
+                    <option value="AQP">Arequipa - Aeropuerto Internacional Rodríguez Ballón (AQP)</option>
+                    <option value="PIU">Piura - Aeropuerto Internacional Capitán FAP Guillermo Concha Iberico (PIU)
+                    </option>
+                    <option value="CIX">Chiclayo - Aeropuerto Internacional Capitán FAP José A. Quiñones González (CIX)
+                    </option>
+                    <option value="TRU">Trujillo - Aeropuerto Internacional Capitán FAP Carlos Martínez de Pinillos
+                        (TRU)</option>
+                    <option value="IQT">Iquitos - Aeropuerto Internacional Coronel FAP Francisco Secada Vignetta (IQT)
+                    </option>
+                    <option value="JUL">Juliaca - Aeropuerto Internacional Inca Manco Cápac (JUL)</option>
+                    <option value="TPP">Tarapoto - Aeropuerto Internacional Cadete FAP Guillermo del Castillo Paredes
+                        (TPP)</option>
+                    <option value="TCQ">Tacna - Aeropuerto Internacional Coronel FAP Carlos Ciriani Santa Rosa (TCQ)
+                    </option>
+                    <option value="PCL">Pucallpa - Aeropuerto Internacional Capitán David Abensur Rengifo (PCL)</option>
+                    <option value="PEM">Puerto Maldonado - Aeropuerto Internacional Padre Aldamiz (PEM)</option>
+                    <option value="AYP">Ayacucho - Aeropuerto Internacional Coronel FAP Alfredo Mendívil Duarte (AYP)
+                    </option>
+                    <option value="TBP">Tumbes - Aeropuerto Internacional Capitán FAP Pedro Canga Rodríguez (TBP)
+                    </option>
+                    <option value="TYL">Talara - Aeropuerto Internacional Capitán FAP Víctor Montes Arias (TYL)</option>
+                    <option value="ILQ">Ilo - Aeropuerto Internacional Coronel FAP Carlos Ciriani Santa Rosa (ILQ)
+                    </option>
+                    <option value="CJA">Cajamarca - Aeropuerto Internacional Mayor General FAP Armando Revoredo Iglesias
+                        (CJA)</option>
+                    <option value="HUU">Huánuco - Aeropuerto Internacional Alférez FAP David Figueroa Fernandini (HUU)
+                    </option>
+                </select>
                 <input type="date" placeholder="Fecha de ida" required>
                 <input type="date" placeholder="Fecha de vuelta" required>
                 <input type="number" placeholder="Pasajeros" min="1" max="5">
                 <select required>
-                    <option value="default"></option>
+                    <option value="" disabled selected hidden>Selecciona una opción</option>
                     <option value="Clase Económica">Clase Económica</option>
                     <option value="Clase Ejecutiva">Clase Ejecutiva</option>
                     <option value="Primera Clase">Primera Clase</option>
@@ -45,16 +107,57 @@
             </form>
         </div>
 
-
-
     </main>
+
+    <article class="promociones">
+        <h1>Promociones de Destino</h1>
+        <div class="card1">
+            <div class="content">
+                <h2>Cuzco</h2>
+                <a href="#">Ver Detalles</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="content">
+                <h2>Trujillo</h2>
+                <a href="#">Ver Detalles</a>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="content">
+                <h2>Máncora</h2>
+                <a href="#">Ver Detalles</a>
+            </div>
+        </div>
+    </article>
+    <div class="metodo-pago">
+        <h2>Métodos de Pago</h2>
+        <div class="debito">
+            <img src="img/promociones/img-medios-de-pago-09.jpg">
+            <small>Tarjetas de Débito</small>
+        </div>
+        <div class="credito">
+            <img src="img/promociones/img-medios-de-pago-09.jpg">
+            <small>Tarjetas de Crédito</small>
+        </div>
+        <div class="transferencia">
+            <img src="img/promociones/transf.jpg">
+            <small>Transferencia Bancaria</small>
+        </div>
+        <div class="efectivo">
+            <img src="img/promociones/pagoefectivo.jpg">
+            <small>Pago en efectivo</small>
+        </div>
+    </div>
     <footer>
         <div class="footer-izq">
             <p>Teléfono: +51 987654321</p>
             <p>Email: info@aerojet.com</p>
         </div>
         <div class="footer-der-ico">
-            <a href="#"><box-icon type='logo' name='facebook'></box-icon></a>
+            <a href="#"><box-icon name='facebook' type='logo'></box-icon></a>
             <a href="#"><box-icon name='twitter' type='logo'></box-icon></a>
             <a href="#"><box-icon name='instagram' type='logo'></box-icon></a>
         </div><!-- 
