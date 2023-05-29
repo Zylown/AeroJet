@@ -91,7 +91,7 @@
      align-items: center;
      justify-content: left;
      padding-left: 2.5%;
-     height: calc(100vh - 160px);
+     height: 90vh;
      background: url(../img/31181.png) no-repeat;
      background-position: center;
      background-position-y: 32%;
@@ -307,9 +307,6 @@
 
 
 
-
-
-
  footer {
      display: flex;
      align-items: center;
@@ -353,7 +350,7 @@
          height: 73vh;
      }
 
-     #menu {
+     #menu-inicio {
          width: auto;
          flex-direction: column;
      }
@@ -448,7 +445,7 @@
          height: 55vh;
      }
 
-     #menu {
+     #menu-inicio {
          width: auto;
          flex-direction: column;
      }
