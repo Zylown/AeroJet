@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/airplane-black-glyph-icon-flight-2239097-transformed.ico" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <title>AeroJet</title>
 </head>
 
@@ -16,9 +17,8 @@
         <img src="img/logo.png" alt="Logo" class="logo">
         <nav id="menu-inicio">
             <a href="#menu-inicio">Inicio</a>
-            <a href="#promos">Destinos</a>
-            <a href="#promos">Ofertas</a>
-            <a href="#">Check-in</a>
+            <a href="#promos">Ofertas y destino</a>
+            <a href="checkin.html">Check-in</a>
             <a href="#">Contacto</a>
         </nav>
         <a href="loginregister.html" class="login">Iniciar sesión / Registrarse</a>
@@ -26,6 +26,16 @@
     </header>
 
     <main>
+
+        <div class="slider-frame">
+            <ul>
+                <li><img class="img1" src="img/slider/costa-verde.jpg" alt=""></li>
+                <li><img class="img2" src="img/slider/condor-4434284_1280.jpg" alt=""></li>
+                <li><img class="img3" src="img/slider/mountain-colorada-5335886_1280.jpg" alt=""></li>
+                <li><img class="img4" src="img/slider/pexels-viajante-dibujero.jpg" alt=""></li>
+            </ul>
+        </div>
+
 
         <div class="search">
             <h1>Busca tu vuelo</h1>
@@ -109,7 +119,7 @@
 
     </main>
 
-    <article id="promos" class="promociones">
+    <section id="promos" class="promociones">
         <h1>Promociones de Destino</h1></br></br></br>
         <div class="card1">
             <div class="content">
@@ -131,7 +141,7 @@
                 <a href="#">Ver Detalles</a>
             </div>
         </div>
-    </article>
+    </section>
     <div class="metodo-pago">
         <h2>Métodos de Pago</h2>
         <div class="debito">
@@ -151,6 +161,21 @@
             <small>Pago en efectivo</small>
         </div>
     </div>
+    <section class="contacto">
+        <h2>Calificanos</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="campo" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" class="campo" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea class="campo" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar" class="boton-enviar">
+        </form>
+    </section>
     <footer>
         <div class="footer-izq">
             <p>Teléfono: +51 987654321</p>

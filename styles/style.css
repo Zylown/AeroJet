@@ -31,7 +31,7 @@
      padding: 10px;
      color: white;
      text-decoration: none;
-     font-size: 20px;
+     font-size: 18px;
 
  }
 
@@ -60,7 +60,7 @@
      position: relative;
      display: block;
      margin-right: 10px;
-     font-size: 20px;
+     font-size: 18px;
      padding: 10px;
      border-radius: 20px;
      color: white;
@@ -86,27 +86,95 @@
      transform: scaleX(1);
  }
 
- main {
-     display: flex;
-     align-items: center;
-     justify-content: left;
-     padding-left: 2.5%;
-     height: 90vh;
-     background: url(../img/31181.png) no-repeat;
-     background-position: center;
-     background-position-y: 32%;
-     background-position-x: 10%;
-     background-size: 105%;
- }
+.slider-frame {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 5px auto 0;
+    overflow: hidden;
+}
 
- .search {
-     width: 620px;
-     height: 330px;
-     border-radius: 20px;
-     background-color: #f0f0f3;
-     box-shadow: -3px -3px 50px #ffffff,
-         12px 5px 40px #d1d9e6;
- }
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 25s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame .img1 {
+    width: 100%;
+    margin-top: -365px;
+}
+
+.slider-frame .img2 {
+    width: 100%;
+    margin-top: -240px;
+}
+
+.slider-frame .img3 {
+    width: 100%;
+    margin-top: -80px;
+}
+
+.slider-frame .img4 {
+    width: 100%;
+    margin-top: -240px;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+ 
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    width: 620px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: #f0f0f3;
+    box-shadow: -3px -3px 50px #ffffff, 12px 5px 40px #d1d9e6;
+    z-index: 2;
+}
 
  .input:focus {
      background-color: white;
@@ -178,11 +246,12 @@
  .promociones {
      position: relative;
      border-top: 6px solid white;
+     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
      display: flex;
      align-items: center;
      justify-content: center;
      min-height: 100vh;
-     background: #F7F7F7;
+     background: #f2f2f2;
  }
 
  .promociones h1 {
@@ -262,10 +331,10 @@
 
  .metodo-pago {
      width: 100%;
-     height: 80px;
      display: inline-flex;
      align-items: center;
      justify-content: center;
+     margin-top: 30px;
  }
 
  .metodo-pago small {
@@ -296,7 +365,51 @@
      margin: 7% auto;
  }
 
+ section {
+     box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+ }
 
+ section.contacto {
+     background-color: #f2f2f2;
+
+
+     padding: 20px;
+     margin-top: 50px;
+ }
+
+ section.contacto h2 {
+     margin-bottom: 20px;
+ }
+
+ section.contacto form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ section.contacto label {
+     margin-bottom: 10px;
+ }
+
+ section.contacto .campo {
+     padding: 5px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+ }
+
+ section.contacto .boton-enviar {
+     background-color: #FF6600;
+     color: white;
+     padding: 10px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     width: 20%;
+ }
+
+ section.contacto .boton-enviar:hover {
+     background-color: #b44a04;
+ }
 
 
 
@@ -506,6 +619,10 @@
      .metodo-pago {
          height: 330px;
          flex-direction: column;
+     }
+
+     .btnEnviar {
+         width: 100%;
      }
 
      .footer-izq {
