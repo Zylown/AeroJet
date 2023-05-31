@@ -110,10 +110,10 @@ nav a:hover::after {
 
 
 .contenedor {
+    position: relative;
     border-radius: 5px;
     background-color: white;
     padding: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 60vh;
 }
@@ -194,28 +194,103 @@ button:hover {
     background-color: #a75118;
 }
 
-footer {
-    height: 15vh;
-}
-
-.contenedor-footer {
+.pie-pagina {
+    position: relative;
     width: 100%;
-    display: inline-flex;
-    height: 15vh;
-    background: #ECECEE;
-    border-top: 0.0625rem solid rgb(184, 184, 184);
-    align-items: center;
-    justify-content: left;
-    overflow: hidden;
+    background-color: #FF6600;
 }
 
-.contenedor-footer .corporacion {
-    align-items: center;
-    justify-content: right;
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    padding: 45px 0px 0px 0px;
 }
 
-.contenedor-footer-img {
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    margin-left: -20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #FF6600;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #ff7f00;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contenedor{
+        height: 45vh;
+    }
+
+    .form-checkin {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .column-izq,
+    .column-der {
+        width: 100%;
+    }
+
+    .pie-pagina {
+        margin-top: 66vh;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 45px 0px 0px 0px;
+    }
+
+
 }
