@@ -27,21 +27,11 @@
 
     <main>
 
-        <div class="slider-frame">
-            <ul>
-                <li><img class="img1" src="img/slider/costa-verde.jpg" alt=""></li>
-                <li><img class="img2" src="img/slider/condor-4434284_1280.jpg" alt=""></li>
-                <li><img class="img3" src="img/slider/mountain-colorada-5335886_1280.jpg" alt=""></li>
-                <li><img class="img4" src="img/slider/pexels-viajante-dibujero.jpg" alt=""></li>
-            </ul>
-        </div>
-
-
         <div class="search">
             <h1>Busca tu vuelo</h1>
             <form class="formulario">
                 <select required>
-                    <option value="" disabled selected hidden>Selecciona una opción</option>
+                    <option value="" disabled selected hidden>Selecciona una opción </option>
                     <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
                     <option value="CUZ">Cusco - Aeropuerto Internacional Alejandro Velasco Astete (CUZ)</option>
                     <option value="AQP">Arequipa - Aeropuerto Internacional Rodríguez Ballón (AQP)</option>
@@ -116,6 +106,17 @@
                 <button class="btnLogin-popup" type="submit">Buscar </button>
             </form>
         </div>
+        <div class="slider-frame">
+            <ul>
+                <li><img class="img1" src="img/slider/costa-verde.jpg" alt=""></li>
+                <li><img class="img2" src="img/slider/condor-4434284_1280.jpg" alt=""></li>
+                <li><img class="img3" src="img/slider/mountain-colorada-5335886_1280.jpg" alt=""></li>
+                <li><img class="img4" src="img/slider/pexels-viajante-dibujero.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+
 
     </main>
 
@@ -161,20 +162,42 @@
             <small>Pago en efectivo</small>
         </div>
     </div>
-    <section class="contacto">
-        <h2>Calificanos</h2>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" class="campo" name="nombre" required>
+    <section class="container"> 
+        <div class="contacto">
+            <h2>Contáctanos</h2>
+            <p>Estamos para ayudarte. Escríbenos un mensaje y te responderemos lo antes posible.</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img/social-media.png" alt="Banner">
+            </div>
+            <div class="column">
+                <form action="#">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
 
-            <label for="email">Email</label>
-            <input type="email" class="campo" name="email" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
 
-            <label for="mensaje">Mensaje</label>
-            <textarea class="campo" name="mensaje" required></textarea>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
 
-            <input type="submit" value="Enviar" class="boton-enviar">
-        </form>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">Selecciona una opción</option>
+                        <option value="aclaraciones">Aclaraciones</option>
+                        <option value="devoluciones">Devoluciones</option>
+                        <option value="facturacion">Facturación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe algo.." style="height:170px"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer-izq">
