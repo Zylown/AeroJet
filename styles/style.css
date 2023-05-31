@@ -513,6 +513,10 @@
          height: auto;
          padding: 5%;
          margin-right: 4%;
+         margin-top: 38%;
+         width: 94%;
+         left: 50%;
+         transform: translateX(-50%);
      }
 
      .search h1 {
