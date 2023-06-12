@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/airplane-black-glyph-icon-flight-2239097-transformed.ico" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
     <title>AeroJet</title>
 </head>
 
@@ -17,12 +16,12 @@
         <img src="img/logo.png" alt="Logo" class="logo">
         <nav id="menu-inicio">
             <a href="#menu-inicio">Inicio</a>
-            <a href="#promos">Ofertas</a>
-            <a href="destinos.html">Destinos</a>
-            <a href="checkin.html">Check-in</a>
+            <a href="pages/destinos.html">Destinos</a>
+            <a href="pages/checkin.html">Check-in</a>
+            <a href="pages/adm-vuelo/admvuelo.html">Administra tus viajes</a>
             <a href="#contact">Contacto</a>
         </nav>
-        <a href="loginregister.html" class="login">Iniciar sesión / Registrarse</a>
+        <a href="pages/loginregister.html" class="login">Iniciar sesión / Registrarse</a>
 
     </header>
 
@@ -30,7 +29,7 @@
 
         <div class="search">
             <h1>Busca tu vuelo</h1>
-            <form class="formulario">
+            <form class="formulario" action="pages/buscar-vuelo/resultadosDeVuelo.html">
                 <select required>
                     <option value="" disabled selected hidden>Selecciona una opción </option>
                     <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
@@ -173,7 +172,7 @@
                 <img src="img/social-media.png" alt="Banner">
             </div>
             <div class="column">
-                <form action="#">
+                <form id="myForm">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
 
@@ -187,7 +186,6 @@
                     <select id="asunto" name="asunto">
                         <option value="">Selecciona una opción</option>
                         <option value="aclaraciones">Aclaraciones</option>
-                        <option value="devoluciones">Devoluciones</option>
                         <option value="facturacion">Facturación</option>
                         <option value="otro">Otro</option>
                     </select>
@@ -197,6 +195,12 @@
 
                     <input type="submit" value="Enviar">
                 </form>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <p>Formulario enviado correctamente</p>
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -250,6 +254,7 @@
             <img src="img/logo.png" alt="Logo" class="logoFooter">
         </div>
     </footer>-->
+    <script src="script/contactanos.js"></script>
 </body>
 
 </html>

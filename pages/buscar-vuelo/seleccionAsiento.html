@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/seleccionAsiento.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="avion">
+        <div class="asiento" id="asiento-1">1</div>
+        <div class="asiento" id="asiento-2">2</div>
+        <!-- Otros asientos... -->
+    </div>
+    <script>
+        const asientos = document.querySelectorAll('.asiento');
+
+        // Agrega un event listener a cada asiento
+        asientos.forEach(asiento => {
+            asiento.addEventListener('click', () => {
+                // Toggle de la clase 'seleccionado' al asiento clickeado
+                asiento.classList.toggle('seleccionado');
+            });
+        });
+    </script>
+</body>
+
+</html>
