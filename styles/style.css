@@ -161,7 +161,16 @@
      }
  }
 
+ fieldset {
+     border: 0;
+     font-size: 13.5px;
+     align-items: center;
+ }
 
+.input-radio{
+    width: 20px;
+    margin: 0px 0px 8px 15px;
+}
 
  .search {
      position: absolute;
@@ -169,16 +178,16 @@
      left: 25%;
      margin-left: 20px;
      transform: translate(-50%, -50%);
-     width: 50%;
-     max-width: 620px;
-     height: 46vh;
+     width: 55%;
+     max-width: 650px;
+     height: 49vh;
      border-radius: 20px;
      background-color: #f0f0f3;
      box-shadow: -3px -3px 50px #ffffff, 12px 5px 40px #d1d9e6;
      z-index: 2;
  }
 
- .input:focus {
+ .input-form:focus {
      background-color: white;
      transform: scale(1.05);
      box-shadow: 13px 13px 100px #969696,
@@ -199,7 +208,7 @@
      justify-content: center;
  }
 
- .search input,
+ .search .input-form,
  .search select {
      width: calc(50% - 20px);
      margin: 10px;
@@ -630,7 +639,7 @@
          font-size: 24px;
      }
 
-     .search input,
+     .search .input-form,
      .search select {
          width: 100%;
          margin: 10px 0;
@@ -697,7 +706,7 @@
          /* Ajusta los valores según sea necesario */
      }
 
-     .search input,
+     .search .input-form,
      .search select {
          width: 100%;
          /* Ajusta los valores según sea necesario */
@@ -773,7 +782,7 @@
          /* Ajusta los valores según sea necesario */
      }
 
-     .search input,
+     .search .input-form,
      .search select {
          width: 100%;
          /* Ajusta los valores según sea necesario */

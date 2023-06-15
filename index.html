@@ -18,7 +18,7 @@
             <a href="#menu-inicio">Inicio</a>
             <a href="pages/destinos.html">Destinos</a>
             <a href="pages/checkin.html">Check-in</a>
-            <a href="pages/adm-vuelo/admvuelo.html">Administra tus viajes</a>
+            <a href="pages/adm-viajes/admvuelo.html">Administra tus viajes</a>
             <a href="#contact">Contacto</a>
         </nav>
         <a href="pages/loginregister.html" class="login">Iniciar sesión / Registrarse</a>
@@ -29,9 +29,14 @@
 
         <div class="search">
             <h1>Busca tu vuelo</h1>
+            <fieldset>
+                <label for="radio-idayvuelta"><input class="input-radio" type="radio" name="tramo" value="Ida y Vuelta" checked>Ida y
+                    Vuelta</label>
+                <label for="radio-soloida"><input class="input-radio" type="radio" name="tramo" value="Solo Ida">Solo Ida</label>
+            </fieldset>
             <form class="formulario" action="pages/buscar-vuelo/resultadosDeVuelo.html">
                 <select required>
-                    <option value="" disabled selected hidden>Selecciona una opción </option>
+                    <option value="" disabled selected hidden>Selecciona un origen </option>
                     <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
                     <option value="CUZ">Cusco - Aeropuerto Internacional Alejandro Velasco Astete (CUZ)</option>
                     <option value="AQP">Arequipa - Aeropuerto Internacional Rodríguez Ballón (AQP)</option>
@@ -63,7 +68,7 @@
                     </option>
                 </select>
                 <select required>
-                    <option value="" disabled selected hidden>Selecciona una opción</option>
+                    <option value="" disabled selected hidden>Selecciona un destino</option>
                     <option value="LIM">Lima - Aeropuerto Internacional Jorge Chávez (LIM)</option>
                     <option value="CUZ">Cusco - Aeropuerto Internacional Alejandro Velasco Astete (CUZ)</option>
                     <option value="AQP">Arequipa - Aeropuerto Internacional Rodríguez Ballón (AQP)</option>
@@ -94,9 +99,9 @@
                     <option value="HUU">Huánuco - Aeropuerto Internacional Alférez FAP David Figueroa Fernandini (HUU)
                     </option>
                 </select>
-                <input type="date" placeholder="Fecha de ida" required>
-                <input type="date" placeholder="Fecha de vuelta" required>
-                <input type="number" placeholder="Pasajeros" min="1" max="5">
+                <input class="input-form" type="date" placeholder="Fecha de ida" required>
+                <input class="input-form" type="date" placeholder="Fecha de vuelta" required>
+                <input class="input-form" type="number" placeholder="Pasajeros" min="1" max="5">
                 <select required>
                     <option value="" disabled selected hidden>Selecciona una opción</option>
                     <option value="Clase Económica">Clase Económica</option>
@@ -109,7 +114,7 @@
         <div class="slider-frame">
             <ul>
                 <li><img class="img1" src="img/slider/PicsArt_lima.jpg" alt=""></li>
-                <li><img class="img2" src="img/slider/condor-4434284_1280.jpg" alt=""></li>
+                <li><img class="img2" src="img/slider/PicsArt_condor.jpg" alt=""></li>
                 <li><img class="img3" src="img/slider/mountain-colorada-5335886_1280.jpg" alt=""></li>
                 <li><img class="img4" src="img/slider/pexels-viajante-dibujero.jpg" alt=""></li>
             </ul>
