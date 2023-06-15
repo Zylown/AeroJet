@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="formpasajero.css">
+    <link rel="stylesheet" href="foterPequeño.css">
+    <link rel="shortcut icon" href="../../../img/airplane-black-glyph-icon-flight-2239097-transformed.ico" />
+
+    <title>AeroJet: Formulario Pasajero</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../../index.html">
+            <img src="../../../img/logo.png" alt="Logo" class="logo"></a>
+        <nav id="menu-inicio">
+        </nav>
+        <a href="../../pages/loginregister.html" class="login">Iniciar sesión / Registrarse</a>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Formulario de Pasajero</h3><br>
+            <form>
+                <div class="form-group-inline">
+                    <div class="form-group-left">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nacionalidad">Nacionalidad:</label>
+                            <input type="text" id="nacionalidad" name="nacionalidad" required
+                                placeholder="ingrese su nacionalidad">
+                        </div>
+
+                    </div>
+                    <div class="form-group-right">
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required
+                                placeholder="Ingrese sus apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="genero">Género:</label>
+                            <select id="genero" name="genero" required>
+                                <option value="">Seleccione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group-left">
+                        <div class="form-group">
+                            <label for="tipo_documento">Tipo de Documento:</label>
+                            <select id="tipo_documento" name="tipo_documento" required>
+                                <option value="">Seleccione</option>
+                                <option value="dni">DNI</option>
+                                <option value="pasaporte">Pasaporte</option>
+                                <option value="carnet_extranjeria">Carnet de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="@Email.com">
+                        </div>
+                    </div>
+                    <div class="form-group-right">
+                        <div class="form-group">
+                            <label for="numero_documento">Número de Documento:</label>
+                            <input type="text" id="numero_documento" name="numero_documento" required
+                                placeholder="Ingrese el numero">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-inline">
+                    <div class="form-group-left">
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese el numero">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+    <br>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="../../../img/logo-black.png" alt="Logo">
+        </div>
+        <div class="footer-direccion">
+            <p style="color: white;">Dirección Electrónica: AeroJet@gmail.com</p>
+        </div>
+</body>
+
+</html>
