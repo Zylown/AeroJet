@@ -167,10 +167,10 @@
      align-items: center;
  }
 
-.input-radio{
-    width: 20px;
-    margin: 0px 0px 8px 15px;
-}
+ .input-radio {
+     width: 20px;
+     margin: 0px 0px 8px 15px;
+ }
 
  .search {
      position: absolute;
@@ -180,7 +180,8 @@
      transform: translate(-50%, -50%);
      width: 55%;
      max-width: 650px;
-     height: 36vh;
+     max-height: 350px;
+     height: 48%;
      border-radius: 20px;
      background-color: #f0f0f3;
      box-shadow: -3px -3px 50px #ffffff, 12px 5px 40px #d1d9e6;
